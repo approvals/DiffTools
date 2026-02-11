@@ -1,5 +1,6 @@
 name,path,arguments,file_types,os,group_name
 DIFF_MERGE,/Applications/DiffMerge.app/Contents/MacOS/DiffMerge,--nosplash %s %s,TEXT,Mac,DIFF_MERGE
+FILE_MERGE,/Applications/Xcode.app/Contents/Applications/FileMerge.app/Contents/MacOS/FileMerge,--nosplash -left %s -right %s,TEXT,Mac,
 BEYOND_COMPARE,/Applications/Beyond Compare.app/Contents/MacOS/bcomp,,TEXT,Mac,BEYOND_COMPARE
 KALEIDOSCOPE,/Applications/Kaleidoscope.app/Contents/MacOS/ksdiff,,TEXT_AND_IMAGE,Mac,KALEIDOSCOPE
 KALEIDOSCOPE3,/usr/local/bin/ksdiff,,TEXT_AND_IMAGE,Mac,KALEIDOSCOPE
