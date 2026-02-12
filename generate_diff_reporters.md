@@ -32,9 +32,7 @@ Read all rows from `diff_reporters.csv`. Note that the first line is a header, n
 
 **Arguments handling:**
 - Parse the `arguments` string into individual tokens
-- Remove `%s` placeholders (these represent received/approved file paths)
-- Keep flags like `--nosplash`, `-d`, `-m`
-- Example: `--nosplash %s %s` → `["--nosplash"]`
+- Example: `--nosplash --left:%s --right:%s` → `["--nosplash", "%s", "%s"]`
 
 ### 3. Output Structure
 
@@ -42,7 +40,8 @@ Each class should:
 1. Extend/implement the base diff reporter type
 2. Set the reporter name (typically the class name)
 3. Set the executable path
-4. Optionally set extra arguments if present
+4. Optionally set extra arguments if present.
+5. Pass the approved and received files, either by substituting them for `%s` or appending if no `%s` is present.
 
 ### 4. Generate Per-OS Aggregator Classes
 
