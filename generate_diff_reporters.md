@@ -8,7 +8,7 @@ This document describes how to generate diff reporter classes for any language f
 |--------|-------------|
 | `name` | Reporter identifier (e.g., `BEYOND_COMPARE_4`, `KDIFF3`) |
 | `path` | Executable path. May contain `{ProgramFiles}` placeholder for Windows |
-| `arguments` | Optional command-line arguments (e.g., `--nosplash %s %s`, `-d %s %s`) |
+| `arguments` | Optional command-line arguments (e.g., `--nosplash %s %s`, `--diff`) |
 | `file_types` | `TEXT`, `IMAGE`, or `TEXT_AND_IMAGE` |
 | `os` | `Mac`, `Windows`, or `Linux` |
 | `group_name` | Optional grouping for aggregating reporters (e.g., `BEYOND_COMPARE`) |
