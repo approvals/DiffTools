@@ -1,0 +1,9 @@
+[tools]
+uv = "latest"
+python = "latest"
+
+[tasks.build_and_test]
+depends = ["validate"]
+
+[tasks]
+validate = "python _validate.py"
