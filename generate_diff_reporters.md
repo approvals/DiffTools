@@ -36,6 +36,8 @@ Read all rows from `diff_reporters.csv`. Note that the first line is a header, n
 
 ### 3. Output Structure
 
+Each generated fild should have a comment on the first line indicating how it was generated.
+
 Each class should:
 1. Extend/implement the base diff reporter type
 2. Set the reporter name (typically the class name)
