@@ -16,7 +16,7 @@ This document describes how to generate diff reporter classes for any language f
 ## Generation Steps
 
 ### 1. Parse the CSV
-Read all rows from `diff_reporters.csv`, skipping the header.
+Read all rows from `diff_reporters.csv`. Note that the first line is a header, not data.
 
 ### 2. For Each Row, Generate a Class
 
