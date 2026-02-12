@@ -21,7 +21,7 @@ Read all rows from `diff_reporters.csv`. Note that the first line is a header, n
 ### 2. For Each Row, Generate a Class
 
 **Class naming:**
-- Convert `name` from `SCREAMING_SNAKE_CASE` to `PascalCase`
+- Convert `name` from `SCREAMING_SNAKE_CASE` to the casing typically used for classes in the target language.
 - Append the `os` value
 - Prefix with language-appropriate convention (e.g., `ReportWith` for Python)
 - Example: `BEYOND_COMPARE_4` + `Windows` → `ReportWithBeyondCompare4Windows`
