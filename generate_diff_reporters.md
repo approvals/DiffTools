@@ -57,7 +57,7 @@ These per-OS reporters allow users to get a working diff tool without specifying
 ### 5. Generate Group Aggregator Classes
 
 For rows sharing the same non-empty `group_name`:
-- Convert `group_name` from `SCREAMING_SNAKE_CASE` to `PascalCase`
+- Convert `group_name` from `SCREAMING_SNAKE_CASE` to the casing typically used for classes in the target language.
 - Create a `FirstWorkingReporter` subclass named `ReportWith{GroupPascalCase}`
 - Include all reporters in the group, in CSV order
 - No OS guard is needed — individual reporters already fail gracefully when the executable is not found
