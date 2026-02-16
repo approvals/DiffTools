@@ -15,6 +15,9 @@ This document describes how to generate diff reporter classes for any language f
 
 ## Generation Steps
 
+### 0. Pull this repo
+Clone into `.ignore/DiffTools` if needed, then `git pull` to the latest.
+
 ### 1. Parse the CSV
 Read all rows from `diff_reporters.csv`. Note that the first line is a header, not data.
 
