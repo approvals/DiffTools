@@ -8,7 +8,7 @@ VALID_FILE_TYPES = {"TEXT", "IMAGE", "TEXT_AND_IMAGE"}
 VALID_OS = {"Mac", "Windows", "Linux"}
 SCREAMING_SNAKE_RE = re.compile(r"^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$")
 
-def main():
+def main() -> None:
     errors = []
 
     with Path("diff_reporters.csv").open(newline="") as f:

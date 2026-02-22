@@ -1,0 +1,1 @@
+To run the build, use the `./build_and_test` script.

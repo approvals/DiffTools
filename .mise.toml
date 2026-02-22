@@ -2,8 +2,21 @@
 uv = "latest"
 python = "latest"
 
-[tasks.build_and_test]
-depends = ["validate"]
+[env.'_'.python.venv]
+path = ".venv"
+create = true
+uv_create_args = ["--seed", "--quiet"]
 
-[tasks]
-validate = "python _validate.py"
+[tasks.build_and_test]
+depends = ["validate", "mypy"]
+
+[tasks.validate]
+run = "python _validate.py"
+depends = ["pip-install"]
+
+[tasks.mypy]
+run = "mypy ."
+depends = ["pip-install"]
+
+[tasks.pip-install]
+run = "pip install --requirement requirements.txt --quiet --disable-pip-version-check"
