@@ -8,7 +8,7 @@ create = true
 uv_create_args = ["--seed", "--quiet"]
 
 [tasks.build_and_test]
-depends = ["validate", "mypy"]
+depends = ["validate", "mypy", "pytest"]
 
 [tasks.validate]
 run = "python _validate.py"
@@ -16,6 +16,10 @@ depends = ["pip-install"]
 
 [tasks.mypy]
 run = "mypy ."
+depends = ["pip-install"]
+
+[tasks.pytest]
+run = "pytest --quiet --junitxml=junit-reports/TEST-results.xml"
 depends = ["pip-install"]
 
 [tasks.pip-install]
