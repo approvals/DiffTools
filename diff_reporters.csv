@@ -24,8 +24,9 @@ VISUAL_STUDIO_CODE,{ProgramFiles}Microsoft VS Code\Code.exe,-d %s %s,TEXT,Window
 DIFF_MERGE,/usr/bin/diffmerge,--nosplash %s %s,TEXT,Linux,DIFF_MERGE
 MELD_MERGE,/usr/bin/meld,%s %s,TEXT,Linux,
 KDIFF3,/usr/bin/kdiff3,%s %s -m,TEXT,Linux,KDIFF3
-DIFF_COMMAND_LINE,/usr/bin/diff,-u %s %s,TEXT,Linux,DIFF_COMMAND_LINE
-DIFF_COMMAND_LINE,/usr/bin/diff,-u %s %s,TEXT,Mac,DIFF_COMMAND_LINE
 SUBLIME_MERGE,/Applications/Sublime Merge.app/Contents/SharedSupport/bin/smerge,mergetool %s %s,TEXT,Mac,SUBLIME_MERGE
 SUBLIME_MERGE,{ProgramFiles}Sublime Merge\smerge.exe,mergetool %s %s,TEXT,Windows,SUBLIME_MERGE
 SUBLIME_MERGE,/usr/bin/smerge,mergetool %s %s,TEXT,Linux,SUBLIME_MERGE
+CURSOR,/Applications/Cursor.app/Contents/Resources/app/bin/code,-d %s %s,TEXT,Mac,
+DIFF_COMMAND_LINE,/usr/bin/diff,-u %s %s,TEXT,Linux,DIFF_COMMAND_LINE
+DIFF_COMMAND_LINE,/usr/bin/diff,-u %s %s,TEXT,Mac,DIFF_COMMAND_LINE
